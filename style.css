@@ -98,7 +98,7 @@ body {
     padding: 0 15px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .weather__body {
         max-width: 300px;
         margin: 0 auto;
@@ -118,7 +118,7 @@ body {
     background-color: #445162;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .hi {
         height: 60px;
     }
@@ -129,7 +129,7 @@ h1 {
     color: #fff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     h1 {
         font-size: 20px;
     }
@@ -139,7 +139,7 @@ h1 {
     padding: 50px 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .weather {
         padding: 20px 0;
     }
@@ -150,7 +150,7 @@ h1 {
     margin: 0 -40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .weather__row {
         flex-direction: column;
     }
@@ -161,7 +161,7 @@ h1 {
     flex: 0 1 33.333%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .weather__column {
         margin: 0 0 20px 0;
     }
