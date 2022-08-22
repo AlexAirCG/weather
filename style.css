@@ -98,14 +98,6 @@ body {
     padding: 0 15px;
 }
 
-@media (max-width: 900px) {
-    .weather__body {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-}
-
-
 .content {
     flex: 1 1 auto;
 }
@@ -118,31 +110,13 @@ body {
     background-color: #445162;
 }
 
-@media (max-width: 500px) {
-    .hi {
-        height: 60px;
-    }
-}
-
 h1 {
     font-size: 30px;
     color: #fff;
 }
 
-@media (max-width: 500px) {
-    h1 {
-        font-size: 20px;
-    }
-}
-
 .weather {
     padding: 50px 0;
-}
-
-@media (max-width: 500px) {
-    .weather {
-        padding: 20px 0;
-    }
 }
 
 .weather__row {
@@ -150,21 +124,9 @@ h1 {
     margin: 0 -40px;
 }
 
-@media (max-width: 500px) {
-    .weather__row {
-        flex-direction: column;
-    }
-}
-
 .weather__column {
     padding: 0 40px;
     flex: 0 1 33.333%;
-}
-
-@media (max-width: 500px) {
-    .weather__column {
-        margin: 0 0 20px 0;
-    }
 }
 
 .weather__item {
@@ -276,4 +238,27 @@ h1 {
     color: #fff;
     font-size: 12px;
     letter-spacing: 0.3px;
+}
+
+/* адаптив =============================================== */
+@media (max-width: 900px) {
+    .weather__body {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .weather__column {
+        margin: 0 0 20px 0;
+    }
+    .weather__row {
+        flex-direction: column;
+    }
+    .weather {
+        padding: 20px 0;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .hi {
+        height: 60px;
+    }
 }
