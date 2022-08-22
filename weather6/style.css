@@ -1,0 +1,264 @@
+/* zero-------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* -------------------------------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.hi {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #445162;
+}
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.weather {
+    padding: 50px 0;
+}
+
+.weather__row {
+    display: flex;
+    margin: 0 -40px;
+}
+
+.weather__column {
+    padding: 0 40px;
+    flex: 0 1 33.333%;
+}
+
+.weather__item {
+    padding: 0 0 10px 0;
+    background-color: #708eb6;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #445162;
+}
+
+.weather__city_sochi {
+    /* min-height: 50px; */
+    padding: 15px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.weather__city_moscow {
+    /* min-height: 50px; */
+    padding: 15px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.weather__city_barnayl {
+    /* min-height: 50px; */
+    padding: 15px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.weather__degrees_sochi {
+    /* min-height: 50px; */
+    padding: 15px 0;
+    font-size: 20px;
+    color: #445162;
+    background-color: #fff;
+    text-align: center;
+}
+
+.weather__degrees_moscow {
+    /* min-height: 50px; */
+    padding: 15px 0;
+    font-size: 20px;
+    color: #445162;
+    background-color: #fff;
+    text-align: center;
+}
+
+.weather__degrees_barnayl {
+    /* min-height: 50px; */
+    padding: 15px 0;
+    font-size: 20px;
+    color: #445162;
+    background-color: #fff;
+    text-align: center;
+}
+
+.weather__icon_sochi {
+    /* min-height: 100px; */
+    text-align: center;
+}
+
+.weather__icon_moscow {
+    /* min-height: 100px; */
+    text-align: center;
+}
+
+.weather__icon_barnayl {
+    /* min-height: 100px; */
+    text-align: center;
+}
+
+.weather__btn {
+    display: block;
+    margin: 0 10px;
+    height: 40px;
+    color: #445162;
+    background-color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.y {
+    font-size: 18px;
+    color: red;
+}
+
+.ndex {
+    color: black;
+}
+
+.footer {
+    background-color: #445162;
+}
+
+.footer__row {
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+
+/* адаптив =============================================== */
+@media (max-width: 900px) {
+    .weather__body {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .weather__column {
+        margin: 0 0 20px 0;
+    }
+    .weather__row {
+        flex-direction: column;
+    }
+    .weather {
+        padding: 20px 0;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .hi {
+        height: 60px;
+    }
+}

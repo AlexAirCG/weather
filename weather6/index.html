@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=" stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="content">
+            <!-- Заголовок -->
+            <div class="hi">
+                <div class="container">
+                    <h1>Получаем прогноз погоды по API</h1>
+                </div>
+            </div>
+
+            <div class="weather">
+                <div class="container">
+                    <div class="weather__body">
+                        <div class="weather__row">
+
+                            <!-- SOCHI -->
+                            <div class="weather__column">
+                                <div class="weather__item">
+                                    <div class="weather__city_sochi"></div>
+                                    <div class="weather__degrees_sochi"></div>
+                                    <div class="weather__discr"></div>
+                                    <div class="weather__icon_sochi"></div>
+                                    <a href="https://yandex.ru/pogoda/?win=545" class="weather__btn">
+                                        <span class="y">Я<span class="ndex">ндекс</span></span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- MOSCOW -->
+                            <div class="weather__column">
+                                <div class="weather__item">
+                                    <div class="weather__city_moscow"></div>
+                                    <div class="weather__degrees_moscow"></div>
+                                    <div class="weather__discr"></div>
+                                    <div class="weather__icon_moscow"></div>
+                                    <a href="https://yandex.ru/pogoda/213" class="weather__btn">
+                                        <span class="y">Я<span class="ndex">ндекс</span></span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- BARNAYL -->
+                            <div class="weather__column">
+                                <div class="weather__item">
+                                    <div class="weather__city_barnayl"></div>
+                                    <div class="weather__degrees_barnayl"></div>
+                                    <div class="weather__discr"></div>
+                                    <div class="weather__icon_barnayl"></div>
+                                    <a href="https://yandex.ru/pogoda/?lat=53.3467865&lon=83.7768631"
+                                        class="weather__btn">
+                                        <span class="y">Я<span class="ndex">ндекс</span></span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__text">У природы нет плохой погоды</div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
